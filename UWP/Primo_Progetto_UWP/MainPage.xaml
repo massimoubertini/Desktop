@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="Primo_Progetto_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Primo_Progetto_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <Button HorizontalAlignment="Left" Margin="118,102,0,0" VerticalAlignment="Top"
+             x:Name="BtnPremi" Content="Hello, World!" Click="BtnPremi_Click" FontFamily="Segoe UI" />
+        <TextBlock x:Name="TxbInforma" HorizontalAlignment="Center" Margin="0,102,0,0"
+                   Text="Selezionare un'opzione per il messaggio, quindi scegliere il pulsante Visualizza." TextWrapping="Wrap"
+                   VerticalAlignment="Top" RenderTransformOrigin="4.08,2.312" FontFamily="Segoe UI" FontSize="14" />
+        <RadioButton x:Name="RdbCiao" Content="Ciao&#xD;&#xA;" Margin="397,231,0,0" VerticalAlignment="Top" IsChecked="True" />
+        <RadioButton x:Name="RdbAddio" Content="Addio&#xD;&#xA;" Margin="787,231,0,0" VerticalAlignment="Top" />
+        <Button x:Name="BtnVisualizza" Content="Visualizza" Margin="565,0,0,0" Width="85" Click="BtnVisualizza_Click" />
+    </Grid>
+</Page>

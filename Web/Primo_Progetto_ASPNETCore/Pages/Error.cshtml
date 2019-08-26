@@ -1,0 +1,24 @@
+﻿@page
+@model ErrorModel
+@{
+    ViewData["Title"] = "Error";
+}
+<h1 class="text-danger">Errore!</h1>
+<h2 class="text-danger">Si è verificato un errore durante l'elaborazione della richiesta.</h2>
+@if (Model.ShowRequestId)
+{
+    <p>
+        <strong>Request ID:</strong> <code>@Model.RequestId</code>
+    </p>
+}
+
+<h3>Modalità di sviluppo</h3>
+<p>
+    Il passaggio all'ambiente di <strong>sviluppo</strong> visualizza informazioni dettagliate sull'errore che si è verificato.
+</p>
+<p>
+    <strong>L'ambiente di sviluppo non dev'essere abilitato per le applicazioni distribuite.</strong>
+    Può comportare la visualizzazione d'informazioni riservate (eccezioni) agli utenti finali.
+    Per il debug locale, attivare la casella di controllo nell'ambiente di <strong>sviluppo</strong> impostando la variabile di ambiente <strong>ASPNETCORE_ENVIRONMENT</strong> a <strong>Development</strong>
+    e riavviare l'app.
+</p>
